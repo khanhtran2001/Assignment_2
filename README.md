@@ -34,16 +34,19 @@ example
 rotating = rotate(temp, angle=30)
 ```
 
-![](githubimage/Screeshot(15))
+![](githubimage/Screeshot(15).png)
+
 
 2. Bluring
 
 ```
 scipy.ndimage.uniform_filter(input, size=3, output=None, mode='reflect', cval=0.0, origin=0)[source]
 ```
+example
 ```
 blured_image = ndimage.uniform_filter(img, size=3)
 ```
+
 
 3. Colorinversion
 
@@ -57,6 +60,7 @@ example
 color_inversion = util.invert(img)
 ```
 
+
 4. Noising
 
 ```
@@ -69,6 +73,7 @@ example
 noisy_image = random_noise(img, var=0.1**.01)
 ```
 
+
 5. Shearing
 
 ```
@@ -79,6 +84,7 @@ example
 ```
 sheared = transform.warp(img, tf, order=1, preserve_range=True, mode='wrap')
 ```
+
 
 6. Warping
 
@@ -91,6 +97,7 @@ example
 ```
 transform = AffineTransform(translation=(-200,0)) 
 ```
+
 
 7. Greyscaling
 
