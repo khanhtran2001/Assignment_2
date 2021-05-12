@@ -23,6 +23,7 @@ from skimage.util import random_noise
 from skimage.filters import gaussian
 from scipy import ndimage
 ```
+![Screenshot (15)](https://user-images.githubusercontent.com/81819743/117994491-cb152d00-b36a-11eb-89f6-8b30e0b7dc2a.png)
 1. Rotation
 
 ```
@@ -33,8 +34,8 @@ example
 ```
 rotating = rotate(temp, angle=30)
 ```
+![Screenshot (17)](https://user-images.githubusercontent.com/81819743/117995024-2fd08780-b36b-11eb-8b0e-975108aed276.png)
 
-![](githubimage/Screeshot(15).png)
 
 
 2. Bluring
@@ -46,6 +47,8 @@ example
 ```
 blured_image = ndimage.uniform_filter(img, size=3)
 ```
+![Screenshot (24)](https://user-images.githubusercontent.com/81819743/117994761-f730ae00-b36a-11eb-8545-7f5e81adc6fa.png)
+
 
 
 3. Colorinversion
@@ -59,6 +62,7 @@ example
 ```
 color_inversion = util.invert(img)
 ```
+![Screenshot (25)](https://user-images.githubusercontent.com/81819743/117995451-876ef300-b36b-11eb-9115-333c104e85df.png)
 
 
 4. Noising
@@ -73,6 +77,8 @@ example
 noisy_image = random_noise(img, var=0.1**.01)
 ```
 
+![Screenshot (27)](https://user-images.githubusercontent.com/81819743/117995543-9ce41d00-b36b-11eb-9a12-6ffc20f7f169.png)
+
 
 5. Shearing
 
@@ -84,7 +90,7 @@ example
 ```
 sheared = transform.warp(img, tf, order=1, preserve_range=True, mode='wrap')
 ```
-
+![Screenshot (28)](https://user-images.githubusercontent.com/81819743/117995642-af5e5680-b36b-11eb-9553-b99e3f52312a.png)
 
 6. Warping
 
@@ -98,6 +104,7 @@ example
 transform = AffineTransform(translation=(-200,0)) 
 ```
 
+![Screenshot (30)](https://user-images.githubusercontent.com/81819743/117995716-bedd9f80-b36b-11eb-8f6a-0a39a3de6962.png)
 
 7. Greyscaling
 
@@ -110,3 +117,8 @@ example
 ```
 gray_scale_image = rgb2gray(img)
 ```
+
+![Screenshot (26)](https://user-images.githubusercontent.com/81819743/117995775-cbfa8e80-b36b-11eb-85bb-fb748eba0f28.png)
+
+
+
