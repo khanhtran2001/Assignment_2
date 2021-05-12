@@ -34,12 +34,14 @@ example
 rotating = rotate(temp, angle=30)
 ```
 
+![](githubimage/Screeshot(15))
+
 2. Bluring
 
 ```
 scipy.ndimage.uniform_filter(input, size=3, output=None, mode='reflect', cval=0.0, origin=0)[source]
 ```
-
+```
 blured_image = ndimage.uniform_filter(img, size=3)
 ```
 
